@@ -79,7 +79,7 @@ exports.pc = () => {
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 DATA NEGARA 」*\n\nkamu sudah terdaftar dengan data \n\n┏━⊱nama\n┗⊱${namaUser}\n┏━⊱nomer\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱umur\n┗⊱${umurUser}\n┏━⊱waktu pendaftaran\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : jangan sampai lupa nomer ini karena ini penting:v`
+	return`*「 DATA NEGARA 」*\n\nkamu sudah terdaftar dengan data \n\n┏━⊱nama\n┗⊱${namaUser}\n┏━⊱nomer\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱umur\n┗⊱${umurUser}\n┏━⊱waktu pendaftaran\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : simpan kode nya ngab`
 }
 
 exports.cmdnf = (prefix, command) => {
@@ -162,6 +162,8 @@ SEKIAN DARI SAYA RADIT GANS^_^
 ┣⊱ *${prefix}wolflogo*
 ┣⊱ *${prefix}lionlogo*
 ┣⊱ *${prefix}jokerlogo*
+┣⊱ *${prefix}tahta*
+┣⊱ *${prefix}nulis*
 ┣━━⊱  *FUN MENU*  ⊰━━━┫
 ┣⊱ *${prefix}mining*
 ┣⊱ *${prefix}bisakah*
@@ -175,6 +177,10 @@ SEKIAN DARI SAYA RADIT GANS^_^
 ┣⊱ *${prefix}nangis*
 ┣⊱ *${prefix}cium*
 ┣⊱ *${prefix}peluk*
+┣⊱ *${prefix}truth*
+┣⊱ *${prefix}dare*
+┣⊱ *${prefix}tts*
+┣⊱ *${prefix}ttp*
 ┣━━⊱ *MUTUAL* ⊰━━━━━┫
 ┣⊱ *${prefix}mutual*
 ┣⊱ *${prefix}next*
@@ -188,10 +194,14 @@ SEKIAN DARI SAYA RADIT GANS^_^
 ┣⊱ *${prefix}igstalk*
 ┣⊱ *${prefix}bitly*
 ┣⊱ *${prefix}listzodiak*
+┣⊱ *${prefix}walpaperhd*
+┣⊱ *${prefix}-*
 ┣━━⊱ *YT & SONG* ⊰━━━┫
 ┣⊱ *${prefix}ytmp3*
 ┣⊱ *${prefix}ytmp4*
 ┣⊱ *${prefix}joox*
+┣⊱ *${prefix}play*
+┣⊱ *${prefix}lirik*
 ┣━━⊱  *NSFW MENU*  ⊰━┫
 ┣⊱ *${prefix}pokemon*
 ┣⊱ *${prefix}anjing*
@@ -201,6 +211,8 @@ SEKIAN DARI SAYA RADIT GANS^_^
 ┣⊱ *${prefix}husbu*
 ┣⊱ *${prefix}shota*
 ┣⊱ *${prefix}ranime*
+┣⊱ *${prefix}hentai
+┣⊱ *${prefix}animehentai*
 ┣━━⊱ *LIMIT & UANG* ⊰━┫
 ┣⊱ *${prefix}limit*
 ┣⊱ *${prefix}buylimit*
@@ -220,6 +232,7 @@ SEKIAN DARI SAYA RADIT GANS^_^
 ┣⊱ *${prefix}demote*
 ┣⊱ *${prefix}promote*
 ┣⊱ *${prefix}listadmin*
+┣⊱ *${prefix}delete*
 ┣⊱ *${prefix}group* [buka/tutup]
 ┣⊱ *${prefix}leveling* [enable/disable]
 ┣⊱ *${prefix}nsfw* [1/0]
