@@ -248,8 +248,9 @@ SEKIAN DARI SAYA RADIT GANS^_^
 ┣⊱ *TOBZ*
 ┣⊱ *ARUGAZ*
 ┃
-┣⊱ NOTE : TQTO DI HAPUS
-┃ GW GAK UP LAGI OKE
+┣⊱ NOTE:Jangan spam bot
+┃
+┃ 
 ┃
 ┗━━⊱  ⸨ *AMD* ⸩  ⊰━━━┛
 `
