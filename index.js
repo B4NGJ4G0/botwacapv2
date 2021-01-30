@@ -13,6 +13,61 @@ const {
    mentionedJid,
    processTime,
 } = require("@adiwajshing/baileys")
+const {
+
+   Gunakan bot yang benar,Tidak boleh asal spam klo tetep akan kami ban,bot ini di edit oleh ~Radit^_^
+
+IG OWNER:@Raditpadillah01
+
+FB OWNER:Radit
+
+FOLLOW NGAB KASIAN
+
+Donasi pulsa ngab:085523589854 (Indosat)
+
+Donasi pulsa ngab:+62 896-3068-1145(indosat)
+
+Kalo ada bug bisa chat ke http://wa.me/6285523589854
+
+TAMBAH FITUR BISA DI BICARAKAN LEWAT WA DI ATAS,MAAF KALO MASIH ADA BUG KAMI JUGA BUTU MAKAN!!
+
+SEKIAN DARI SAYA RADIT GANS^_^
+
+} = require("@adiwajshing/baileys")
+
+const {
+
+	listzodiak,	aries,
+
+	taurus,
+
+	gemini,
+
+	cancer,
+
+	Leo,
+
+	Virgo,
+
+	Libra,
+
+	Scorpio,
+
+	Sagittarius,
+
+	Capricorn,
+
+	Aquarius,
+
+	Pisces
+
+} = require('./src/listzodiak')
+
+const {
+
+cekprefix
+
+} = require('./src/cekprefix')
 const qrcode = require("qrcode-terminal") 
 const moment = require("moment-timezone") 
 const fs = require("fs") 
@@ -35,7 +90,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Ahmad Admin\n' 
             + 'ORG: Pengembang XBot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6281386008628:+62 813-8600-8628\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6285523589854:+62 855-2358-9854\n' 
             + 'END:VCARD' 
 prefix = '#'
 blocked = []   
@@ -44,7 +99,7 @@ memberlimit = 2
 cr = '*BOT INI SUDAH TERVERIFIKASI*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["6281386008628@s.whatsapp.net","6281386008628@s.whatsapp.net"] 
+const ownerNumber = ["6285523589854@s.whatsapp.net","6281386008628@s.whatsapp.net"] 
 /************************************/
 
        
