@@ -7,7 +7,7 @@
 ## Clone this project
 
 ```bash
-> git clone https://github.com/B4NGJ4G0/botwacapv2
+> git clone https://github.com/raditgans/botwacapv2
 ```
 
 ## Install the dependencies:
@@ -129,6 +129,6 @@ you've just cloned!!
 
 
 ## whatsapp number
-* [`WhatsApp`](wa.me/6281386008628)
+* [`WhatsApp`](wa.me/6285523589854)
 ### Donate
-* [`Pulsa : +6281386008628`]
+* [`Pulsa : +6285523589854`]

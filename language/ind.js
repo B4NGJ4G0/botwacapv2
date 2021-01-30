@@ -79,7 +79,7 @@ exports.pc = () => {
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 DATA NEGARA 」*\n\nkamu sudah terdaftar dengan data \n\n┏━⊱nama\n┗⊱${namaUser}\n┏━⊱nomer\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱umur\n┗⊱${umurUser}\n┏━⊱waktu pendaftaran\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : jangan sampai lupa nomer ini karena ini penting:v`
+	return`*「 DATA NEGARA 」*\n\nkamu sudah terdaftar dengan data \n\n┏━⊱nama\n┗⊱${namaUser}\n┏━⊱nomer\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱umur\n┗⊱${umurUser}\n┏━⊱waktu pendaftaran\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : simpan kode nya ngab`
 }
 
 exports.cmdnf = (prefix, command) => {
@@ -124,7 +124,23 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *Level* : ${getLevelingLevel(sender)}
 ┣⊱ *User register* : ${_registered.length}
 ┗━━━⊱  ⸨ *AMD* ⸩  ⊰━━━━┛
+Gunakan bot yang benar,Tidak boleh asal spam klo tetep akan kami ban,bot ini di edit oleh ~Radit^_^
 
+IG OWNER:@Raditpadillah01
+
+FB OWNER:Radit
+
+FOLLOW NGAB KASIAN
+
+Donasi pulsa ngab:085523589854 (Indosat)
+
+Donasi pulsa ngab:+62 896-3068-1145(indosat)
+
+Kalo ada bug bisa chat ke http://wa.me/6285523589854
+
+TAMBAH FITUR BISA DI BICARAKAN LEWAT WA DI ATAS,MAAF KALO MASIH ADA BUG KAMI JUGA BUTU MAKAN!!
+
+SEKIAN DARI SAYA RADIT GANS^_^
 
 ┏━━⊱ *MAKER MENU* ⊰━━┓
 ┣⊱ *${prefix}sticker*
@@ -146,6 +162,8 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}wolflogo*
 ┣⊱ *${prefix}lionlogo*
 ┣⊱ *${prefix}jokerlogo*
+┣⊱ *${prefix}tahta*
+┣⊱ *${prefix}nulis*
 ┣━━⊱  *FUN MENU*  ⊰━━━┫
 ┣⊱ *${prefix}mining*
 ┣⊱ *${prefix}bisakah*
@@ -159,6 +177,10 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}nangis*
 ┣⊱ *${prefix}cium*
 ┣⊱ *${prefix}peluk*
+┣⊱ *${prefix}truth*
+┣⊱ *${prefix}dare*
+┣⊱ *${prefix}tts*
+┣⊱ *${prefix}ttp*
 ┣━━⊱ *MUTUAL* ⊰━━━━━┫
 ┣⊱ *${prefix}mutual*
 ┣⊱ *${prefix}next*
@@ -171,10 +193,15 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}resepmasakan*
 ┣⊱ *${prefix}igstalk*
 ┣⊱ *${prefix}bitly*
+┣⊱ *${prefix}listzodiak*
+┣⊱ *${prefix}walpaperhd*
+┣⊱ *${prefix}-*
 ┣━━⊱ *YT & SONG* ⊰━━━┫
 ┣⊱ *${prefix}ytmp3*
 ┣⊱ *${prefix}ytmp4*
 ┣⊱ *${prefix}joox*
+┣⊱ *${prefix}play*
+┣⊱ *${prefix}lirik*
 ┣━━⊱  *NSFW MENU*  ⊰━┫
 ┣⊱ *${prefix}pokemon*
 ┣⊱ *${prefix}anjing*
@@ -184,6 +211,8 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}husbu*
 ┣⊱ *${prefix}shota*
 ┣⊱ *${prefix}ranime*
+┣⊱ *${prefix}hentai
+┣⊱ *${prefix}animehentai*
 ┣━━⊱ *LIMIT & UANG* ⊰━┫
 ┣⊱ *${prefix}limit*
 ┣⊱ *${prefix}buylimit*
@@ -203,6 +232,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}demote*
 ┣⊱ *${prefix}promote*
 ┣⊱ *${prefix}listadmin*
+┣⊱ *${prefix}delete*
 ┣⊱ *${prefix}group* [buka/tutup]
 ┣⊱ *${prefix}leveling* [enable/disable]
 ┣⊱ *${prefix}nsfw* [1/0]
@@ -232,8 +262,9 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *TOBZ*
 ┣⊱ *ARUGAZ*
 ┃
-┣⊱ NOTE : TQTO DI HAPUS
-┃ GW GAK UP LAGI OKE
+┣⊱ NOTE:Jangan spam bot
+┃
+┃ 
 ┃
 ┗━━⊱  ⸨ *AMD* ⸩  ⊰━━━┛
 `
