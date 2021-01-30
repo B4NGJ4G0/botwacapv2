@@ -99,7 +99,7 @@ memberlimit = 2
 cr = '*BOT INI SUDAH TERVERIFIKASI*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["6285523589854@s.whatsapp.net","6281386008628@s.whatsapp.net"] 
+const ownerNumber = ["6285523589854@s.whatsapp.net","6285523589854@s.whatsapp.net"] 
 /************************************/
 
        
