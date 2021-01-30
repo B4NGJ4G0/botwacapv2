@@ -124,7 +124,23 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *Level* : ${getLevelingLevel(sender)}
 ┣⊱ *User register* : ${_registered.length}
 ┗━━━⊱  ⸨ *AMD* ⸩  ⊰━━━━┛
+Gunakan bot yang benar,Tidak boleh asal spam klo tetep akan kami ban,bot ini di edit oleh ~Radit^_^
 
+IG OWNER:@Raditpadillah01
+
+FB OWNER:Radit
+
+FOLLOW NGAB KASIAN
+
+Donasi pulsa ngab:085523589854 (Indosat)
+
+Donasi pulsa ngab:+62 896-3068-1145(indosat)
+
+Kalo ada bug bisa chat ke http://wa.me/6285523589854
+
+TAMBAH FITUR BISA DI BICARAKAN LEWAT WA DI ATAS,MAAF KALO MASIH ADA BUG KAMI JUGA BUTU MAKAN!!
+
+SEKIAN DARI SAYA RADIT GANS^_^
 
 ┏━━⊱ *MAKER MENU* ⊰━━┓
 ┣⊱ *${prefix}sticker*
