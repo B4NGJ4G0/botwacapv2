@@ -187,6 +187,7 @@ SEKIAN DARI SAYA RADIT GANS^_^
 ┣⊱ *${prefix}resepmasakan*
 ┣⊱ *${prefix}igstalk*
 ┣⊱ *${prefix}bitly*
+┣⊱ *${prefix}listzodiak*
 ┣━━⊱ *YT & SONG* ⊰━━━┫
 ┣⊱ *${prefix}ytmp3*
 ┣⊱ *${prefix}ytmp4*
