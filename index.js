@@ -15,28 +15,6 @@ const {
 } = require("@adiwajshing/baileys")
 const {
 
-   Gunakan bot yang benar,Tidak boleh asal spam klo tetep akan kami ban,bot ini di edit oleh ~Radit^_^
-
-IG OWNER:@Raditpadillah01
-
-FB OWNER:Radit
-
-FOLLOW NGAB KASIAN
-
-Donasi pulsa ngab:085523589854 (Indosat)
-
-Donasi pulsa ngab:+62 896-3068-1145(indosat)
-
-Kalo ada bug bisa chat ke http://wa.me/6285523589854
-
-TAMBAH FITUR BISA DI BICARAKAN LEWAT WA DI ATAS,MAAF KALO MASIH ADA BUG KAMI JUGA BUTU MAKAN!!
-
-SEKIAN DARI SAYA RADIT GANS^_^
-
-} = require("@adiwajshing/baileys")
-
-const {
-
 	listzodiak,	aries,
 
 	taurus,
@@ -63,11 +41,7 @@ const {
 
 } = require('./src/listzodiak')
 
-const {
-
-cekprefix
-
-} = require('./src/cekprefix')
+const cekprefix = require('./src/cekprefix')
 const qrcode = require("qrcode-terminal") 
 const moment = require("moment-timezone") 
 const fs = require("fs") 
@@ -655,6 +629,7 @@ client.on('group-participants-update', async (anu) => {
 					})
 					await limitAdd(sender)
 					break
+
                       case 'qrcode':
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -663,20 +638,250 @@ client.on('group-participants-update', async (anu) => {
 					const buff = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					await limitAdd(sender)
+
+                  case 'listzodiak':
+					if (isBanned) return reply(mess.only.benned)    
+					if (!isUser) return reply(mess.only.userB)
+					
+					client.sendMessage(from, listzodiak(prefix) , text, { quoted: mek })
 					break
+					case 'zodiak':
+					if (isBanned) return reply(mess.only.benned)    
+					if (!isUser) return reply(mess.only.userB)
+					
+	if (args.length === 0) {
+	client.sendMessage(from, listzodiak(), text)
+	} else if (args.includes('aries')) {
+	client.sendMessage(from, aries(), text)
+	} else if (args.includes('taurus')) {
+	client.sendMessage(from, taurus(), text)
+	} else if (args.includes('gemini')) {
+	client.sendMessage(from, gemini(), text)
+	} else if (args.includes('cancer')) {
+	client.sendMessage(from, cancer(), text)
+	} else if (args.includes('leo')) {
+	client.sendMessage(from, Leo(), text)
+	} else if (args.includes('virgo')) {
+	client.sendMessage(from, Virgo(), text)
+	} else if (args.includes('libra')) {
+	client.sendMessage(from, Libra(), text)
+	} else if (args.includes('scorpio')) {
+	client.sendMessage(from, Scorpio(), text)
+	} else if (args.includes('sagittarius')) {
+	client.sendMessage(from, Sagittarius(), text)
+	} else if (args.includes('capricorn')) {
+	client.sendMessage(from, Capricorn(), text)
+	} else if (args.includes('aquarius')) {
+	client.sendMessage(from, Aquarius(), text)
+	} else if (args.includes('pisces')) {
+	client.sendMessage(from, Pisces(), text)
+	}
+	break
+            case 'irii':
+			client.sendPtt(from, './botwacapv2/iri2.mp3', id)
+			break
+             case 'iri':
+			client.sendPtt(from, './botwacapv2/iri.mp3', {quoted: mek, ptt:true})
+			break
+            case 'baka':
+            case 'onichan':
+            case 'bodoh':
+                client.sendMessage(dari, './botwacapv2/baka.mp3', audio/mp3, {quoted: mek, ptt:true})
+                break
+
+           case 'play':
+					if (!isUser) return reply(mess.only.userB)
+         if (!isPremium) return reply(mess.only.premium)
+          if (isBanned) return reply(mess.only.benned)   
+				var query = body.slice(5)
+                data = await fetchJson(`https://api.vhtear.com/ytmp3?query=${query}&apikey=Aris komtol`, {method: 'get'})
+               if (data.status == false) return reply(`〘404〙lagu tidak di temukan`)
+                 infomp3 = `*Lagu Ditemukan!!!*\nJudul : ${data.result.title}\nDuration : ${data.result.duration}\nSize : ${data.result.size}`
+                buffer = await getBuffer(data.result.image)
+                lagu = await getBuffer(data.result.mp3)
+                client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
+                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${data.result.title}.mp3`, quoted: mek})
+                  return reply(mess.wait)
+                break
+      
+     case 'tahta':
+                if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+                
+					if (!isPremium) return reply(mess.only.premi)
+					if (args.length < 1) return reply('Teksnya mana kak? >.<')
+					teks = body.slice(7)
+					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					reply(mess.wait)
+					bufferrty = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=Aris komtol`, {method: 'get'})
+					client.sendMessage(from, bufferrty, image, {quoted: mek, caption: 'Harta Tahta '+teks})
+					break
+					
                 case 'ninjalogo':
-				if (!isRegistered) return reply(ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
+                if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+                
                       if (args.length < 1) return reply('Teks nya mana?')
-                      gh = body.slice(11)
-                      gl1 = gh.split("|")[0];
-                      gl2 = gh.split("|")[1];
-                      reply(ind.wait())
-                      anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=${gl1}&text2=${gl2}&apikey=BotWeA`, {method: 'get'})
-                      buff = await getBuffer(anu.result)
-                      client.sendMessage(from, buff, image, {quoted: mek})
-                      await limitAdd(sender)
+                      var geh = body.slice(11)
+                      gl1n = geh.split("|")[0];
+                      gl2n = geh.split("|")[1];
+                      reply(mess.wait)
+                      anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=${gl1n}&text2=${gl2n}&apikey=BotWeA`, {method: 'get'})
+                      bufqf = await getBuffer(anu.result)
+                      client.sendMessage(from, bufqf, image, {quoted: mek})
                       break
+                   case 'tts':
+				if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+				
+					if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana om?', text, {quoted: mek})
+					const gtts = require('./lib/gtts')(args[0])
+					if (args.length < 2) return client.sendMessage(from, 'Textnya mana om', text, {quoted: mek})
+					dtt = body.slice(9)
+					ranm = getRandom('.mp3')
+					rano = getRandom('.ogg')
+					dtt.length > 600
+					? reply('Textnya kebanyakan om')
+					: gtts.save(ranm, dtt, function() {
+						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
+							fs.unlinkSync(ranm)
+							bufferg = fs.readFileSync(rano)
+							if (err) return reply('Gagal om:(')
+							client.sendMessage(from, bufferg, audio, {quoted: mek, ptt:true})
+							fs.unlinkSync(rano)
+						})
+					})
+					break
+                   case 'truth':
+				if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+				
+					const trut =['Pernah suka sama siapa aja? berapa lama?','Kalau boleh atau kalau mau, di gc/luar gc siapa yang akan kamu jadikan sahabat?(boleh beda/sma jenis)','apa ketakutan terbesar kamu?','pernah suka sama orang dan merasa orang itu suka sama kamu juga?','Siapa nama mantan pacar teman mu yang pernah kamu sukai diam diam?','pernah gak nyuri uang nyokap atau bokap? Alesanya?','hal yang bikin seneng pas lu lagi sedih apa','pernah cinta bertepuk sebelah tangan? kalo pernah sama siapa? rasanya gimana brou?','pernah jadi selingkuhan orang?','hal yang paling ditakutin','siapa orang yang paling berpengaruh kepada kehidupanmu','hal membanggakan apa yang kamu dapatkan di tahun ini','siapa orang yang bisa membuatmu sange','siapa orang yang pernah buatmu sange','(bgi yg muslim) pernah ga solat seharian?','Siapa yang paling mendekati tipe pasangan idealmu di sini','suka mabar(main bareng)sama siapa?','pernah nolak orang? alasannya kenapa?','Sebutkan kejadian yang bikin kamu sakit hati yang masih di inget','pencapaian yang udah didapet apa aja ditahun ini?','kebiasaan terburuk lo pas di sekolah apa?']
+					const ttrth = trut[Math.floor(Math.random() * trut.length)]
+					truteh = await getBuffer(`https://i.ibb.co/zhfNVQg/14d5c012fd47.jpg`)
+					client.sendMessage(from, truteh, image, { caption: '*Truth*\n\n'+ ttrth, quoted: mek })
+					break
+				case 'dare':
+				if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+				
+					const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "🦄💨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
+					const der = dare[Math.floor(Math.random() * dare.length)]
+					tod = await getBuffer(`https://i.ibb.co/7x3DkbF/104b9cefdf68.jpg`)
+					client.sendMessage(from, tod, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
+					break
+              case 'Assalamualaikum':
+                                client.reply(from, `Waalaikumsalam wr.wb${pushname}:)`)
+               case 'ttp':
+                           if (isBanned) return reply(mess.only.benned)    
+				     if (!isUser) return reply(mess.only.userB)
+                
+					if (args.length < 1) return reply('Textnya mana um?')
+					ranpl = getRandom('.png')
+					ranol = getRandom('.webp')
+					ttpl = body.slice(5).trim()
+					anuf = await fetchJson(`https://mhankbarbars.herokuapp.com/api/text2image?text=${ttpl}&apiKey=pJ6xKSMPCT8QMcvBzGFY`, {method: 'get'})
+					if (anuf.error) return reply(anuf.error)
+					exec(`wget ${anuf.result} -O ${ranpl} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranol}`, (err) => {
+						fs.unlinkSync(ranpl)
+						if (err) return reply(mess.error.stick)
+						bufferj = fs.readFileSync(ran)
+						client.sendMessage(from, bufferj, sticker, {quoted: mek})
+						fs.unlinkSync(ranol)
+					})
+					break
+                    case 'hentai':
+                                    try {
+                                    	if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+                                    	
+                                                if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=BotWeA`, {method: 'get'})
+                                                bufferhhh = await getBuffer(res.result)
+                                                client.sendMessage(from, bufferhhh, image, {quoted: mek, caption: 'Nih gan'})
+                                        } catch (e) {
+                                                console.log(`Error :`, color(e,'red'))
+                                                reply('❌ *ERROR* ❌')
+                                        }
+                                        break
+                        case 'p':
+				    try {
+					if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+					
+					if (!isPremium) return reply(mess.only.premium)
+						if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
+						res = await fetchJson(`https://nekos.life/api/v2/img/boobs`, {method: 'get'})
+						buffer = await getBuffer(res.result)
+						 cons.sendMessage(from, res, image, {quoted: mek, caption: 'ni anjim'})
+					} catch (e) {
+						console.log(`Error :`, color(e,'red'))
+						reply('❌ *ERROR* ❌')
+					}
+					break
+                                case 'nulis':
+				case 'tulis':
+				if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+				
+					if (args.length < 1) return reply('Yang mau di tulis apaan?')
+					tulis = body.slice(6)
+					reply(mess.wait)
+					buffer4 = await getBuffer(`https://api.vhtear.com/write?text=${tulis}&apikey=Aris komtol`, {method: 'get'})
+					client.sendMessage(from, buffer4, image, {quoted: mek, caption: 'Ketahuan guru mampus lu'})
+					break
+                     case 'delete':
+				if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+				
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di jadi admin!')
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+					if (mentioned.length > 1) {
+						teks = 'Perintah di terima, hapus pesan :\n'
+						for (let _ of mentioned) {
+							teks += `@${_.split('@')[0]}\n`
+						}
+						mentions(teks, mentioned, true)
+						client.deleteMessage(from, mentioned)
+					} else {
+						mentions(`Perintah di terima, hapus pesan : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						client.deleteMessage(from, mentioned)
+					}
+					break
+              case 'animehentai':
+				if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+					if (!isNsfw) return reply('❌ *FALSE* ❌')
+					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=animehentai&apikey=Aris komtol`, {method: 'get'})
+					var hen = JSON.parse(JSON.stringify(anu.result));
+					var tai =  hen[Math.floor(Math.random() * hen.length)];
+					nyeww = await getBuffer(tai)
+					client.sendMessage(from, nyeww, image, { caption: 'hentai!!', quoted: mek })
+					break
+
+               case 'walpaperhd':
+				if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+				
+					if (args.length < 1) return reply('teks nya mana om')
+					teksj = body.slice(7)
+					reply(mess.wait)
+					anwu = await fetchJson(`https://api.vhtear.com/walpaper?query=${teksj}&apikey=Aris komtol`, {method: 'get'})
+					bufferx = await getBuffer(anwu.result.LinkImg)
+					client.sendMessage(from, bufferx, image, {quoted: mek})
+					break
+               case 'lirik':
+                         if (isBanned) return reply(mess.only.benned)    
+				if (!isUser) return reply(mess.only.userB)
+                
+					teks = body.slice(7)
+					anu = await fetchJson(`http://scrap.terhambar.com/lirik?word=${teks}`, {method: 'get'})
+					reply('Lirik dari lagu '+teks+' adalah :\n\n'+anu.result.lirik)
+					break
+
                 case 'glitch':
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
